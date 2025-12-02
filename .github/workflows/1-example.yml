@@ -7,7 +7,7 @@ jobs:
     builds:
      runs-on: ubuntu-latest
      steps: 
-        - uses: actions/checkout@v4
+        - uses: actions/checkout@v5
         
         - name: Run a one-online script
           run: echo Hello Venkata Ramm
