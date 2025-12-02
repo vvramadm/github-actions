@@ -9,7 +9,7 @@ jobs:
     build:
         runs-on: ubuntu-latest
         name: Build
-        needs: [Dev]
+        needs: [dev]
         steps:
             - uses: actions/checkout@v4
             - name: Build and deploy on Cloud
