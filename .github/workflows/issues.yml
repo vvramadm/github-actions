@@ -1,0 +1,15 @@
+# .github/workflows/
+name: issues
+on: 
+    issues:
+        types: [opened, edited, milestoned]
+    pull_request:
+        types:
+            - opened
+        branches:
+            -  "releases/**"
+jobs:
+    build:
+        name: Build
+        steps:
+           - name: Build and deploy on Cloud                 
