@@ -1,5 +1,5 @@
 # .github/workflows/
-name: issues
+name: issue
 on: 
     issues:
         types: [opened, edited, milestoned]
@@ -10,6 +10,7 @@ on:
             -  "releases/**"
 jobs:
     build:
-        name: Build
-        steps:
-           - name: Build and deploy on Cloud                 
+      - name: Builds
+        run-on: ubuntu-latest
+         steps:
+            - name: Build and deploy on Cloud                 
