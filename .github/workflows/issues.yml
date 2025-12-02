@@ -9,7 +9,7 @@ on:
         branches:
             -  "releases/**"
 jobs:
-    builds:
+    issue:
       runs-on: ubuntu-latest
       steps:
       
