@@ -9,8 +9,9 @@ on:
         branches:
             -  "releases/**"
 jobs:
-    build:
-      - name: Builds
-        run-on: ubuntu-latest
-         steps:
-            - name: Build and deploy on Cloud                 
+    builds:
+      runs-on: ubuntu-latest
+      steps:
+      
+        - name:  deploy on Cloud                 
+          run: echo Hello Venkata Ramm
