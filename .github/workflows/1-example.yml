@@ -1,0 +1,13 @@
+# gihub CI example and folder .github/workflows/
+name: CI
+on:
+    push:
+        branches: ["main"]
+jobs:
+    builds:
+     runs-on: ubuntu-latest
+     steps: 
+        - uses: actions/checkout@v4
+        
+        - name: Run a one-online script
+          run: echo Hello Venkata Ramm
